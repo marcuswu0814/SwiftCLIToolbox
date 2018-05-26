@@ -11,13 +11,13 @@ class GitTest: XCTestCase {
         TempGitRepo.setUP()
     }
     
-    func test__shuoldGetCurrentAuthorName() {
+    func test__shouldGetCurrentAuthorName() {
         let authorName = Git.authorName("")
         
         XCTAssertTrue(authorName == TempGitRepo.userName)
     }
     
-    func test__shuoldGetCurrentCommitMessage() {
+    func test__shouldGetCurrentCommitMessage() {
         let commitMessage = Git.commitMessage("")
         
         let containsCommitMessage = commitMessage?.contains(TempGitRepo.commitMessage)
