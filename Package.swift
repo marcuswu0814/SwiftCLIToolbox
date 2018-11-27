@@ -13,12 +13,12 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/onevcat/Rainbow", from: "3.0.0"),
         .package(url: "https://github.com/kylef/Commander", from: "0.8.0"),
-        .package(url: "https://github.com/kylef/Stencil", .branch("master")),
+        .package(url: "https://github.com/SwiftGen/StencilSwiftKit", from: "2.7.1"),
     ],
     targets: [
         .target(
             name: "SwiftCLIToolbox",
-            dependencies: ["Rainbow", "Commander", "Stencil"]),
+            dependencies: ["Rainbow", "Commander", "StencilSwiftKit"]),
         .testTarget(
             name: "SwiftCLIToolboxTests",
             dependencies: ["SwiftCLIToolbox"]),
