@@ -20,7 +20,7 @@ open class SwiftScriptRunner {
 
     open func wait() {
         while count > 0 &&
-            runLoop.run(mode: .defaultRunLoopMode,
+            runLoop.run(mode: .default,
                         before: Date(timeIntervalSinceNow: 0.1)) {
         }
     }
